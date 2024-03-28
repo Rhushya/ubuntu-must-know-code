@@ -1,0 +1,267 @@
+my codes linux :
+
+
+
+clear
+
+ls
+
+ls -l	:shows the list in pretty foramte 
+
+ls -a	
+
+ls -al
+
+pwd
+
+cd
+
+cd ..
+
+cd 
+
+touch  afile.txt
+
+
+
+touch  hey man 
+
+touch lincode {1..10}
+
+touch -d tommorow hey man 
+
+cat <file name > : to look for the content in the files 
+
+echo 
+
+echo "hey man how are you "> newfile.txt
+
+nano hey.txt  (ctrl x ->y->enter and save ) ::create a live file 
+
+vim : edit a file 
+
+shred <file name >  : no one to watch to see the file content 
+
+mkdir newdir 
+
+cp a.txt  ./myhome 
+
+mv a.txt ./myhome 
+
+rm a.txt
+
+rmdir  ./myhome
+
+rm -r ./home
+
+ln -s a.txt alinktothisfile 
+
+clear
+
+whomami
+
+useradd <username >
+
+sudo 
+
+su 
+
+exit
+
+passwd <username >
+
+sudo passwd <username>
+
+sudo apt update 
+
+sudo apt insatll <module>::: then when you use the command "module then module will be used 
+
+man < module name > ::tells about the module and how to use 
+
+whatis < module > :tells us about the module
+
+which <module> : tells about the dir of the module only one dir 
+
+whereis  <module >tells about the dir of the module all the dir 
+
+wget < link > ::to download the file from web 
+
+curl < link > > a.txt :: the content of the link is downlaoded to the a.txt file 
+
+zip < zip file you want to cerate > < to what to you want to zip inside >
+
+unzip < file name >  
+
+less :: alternative to cat it is used to display one page at a time preferably over cat as it displays one page at a time 
+
+head <file name > : beginning of the file 
+
+tail <file name> : to see the end of the file 
+
+cmp <file 1> <file 2 >   :used to compare but does tell where it does differ 
+
+diff < file 1 > < file 2 > : tells us where does the file differ 
+
+sort ::  used like ::cat a.txt | sort   (sorts in alphabetical order)
+
+find <directory > - name <file name >   
+
+sudo find .-type f -name ".*" :: this is used to find all hidden files also 
+
+find .-type f -empty 
+
+chmod +x < file name > :: this is used to make the file executable and also executes the file 
+
+chown < user > < file name > ::this is used to change the owner
+
+
+
+NETWORK CODES
+
+ifconfig ::if you dont have it then install it using "sudo apt install net-tools "
+
+ip address
+
+ip address |grep eth0 :: used to see only ipadress for one interface that is ethernet here 
+
+ip address |grep eth0 |grep inet ::used to see only ipadress for one interface that is ethernet here
+
+ip adress  |grep eth0 |grep inet |awk '{print $2}'::this is used to only get the ip adress 	
+
+cat etc/resolve.config 
+
+resolvectl status 
+
+ping <website > :: this is used to check to see is the website up 
+
+ping -c 5 <website >  ::cout of the packet  
+
+ping -s 500 <website > :: size of the packet 
+
+ping -c 5 -s 600 <website > :: used to cout and also the size of the packet 
+
+tracerout <name of the site >::this is used to check the path that you are seeing to get to the website   
+
+netstat  ::to check what ports are opened on the machine 
+
+netstat -tulpn  ::better version from the above 
+
+ss-tulpn
+
+
+
+FIREWALLS
+
+
+
+iptables 
+
+sudo iptables -I INPUT -p tcp -m tcp --dport 80 -j ACCEPT
+
+ufw allow 80 
+
+sudo ufw allow 80 
+
+ufw status 
+
+sudo ufw enable 
+
+ufw status
+
+
+
+
+
+TO KNOW YOUR SYSTEM 
+
+
+
+uname
+
+
+
+PRETTIER formate for the system discription 
+
+neofetch 
+
+sudo apt install  neofetch 
+
+neofetch 
+
+
+
+
+
+CALENDER
+
+sudo apt install cal
+
+cal
+
+
+
+
+
+TO SOLVE A MAtH problem 
+
+echo "7+8" |bc
+
+
+
+free :: to check the memoroy
+
+
+
+df 
+
+df -H
+
+ps ::process
+
+ps -aux 
+
+
+
+top 
+
+htop 
+
+kill :: to kill the process 
+
+ps -aux |grep thisisbash 
+
+kill -9 <which one you want to kill >
+
+
+
+pkill -f < naem of the it >
+
+
+
+systemctl
+
+sudo systemctl stop  apache2
+
+sudo systemctl start apache2 
+
+sudo systemctl restart apache2
+
+sudo systemctl status apache2 
+
+histroy :: to check all the codes that we types and what is used
+
+sudo reboot
+
+sudo shutdown 
+
+sudo shutdown -now 
+
+
+
+
+
+
+
+
+
+refer network chunk 10 minutes vedio allcode youtube vvvp just brushes throuch the code file
